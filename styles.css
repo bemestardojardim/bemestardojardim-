@@ -46,7 +46,8 @@
 }
 
 body {
-        background-color: #8B4513; /* Código hexadecimal para el color tierra */
+        
+        background-image: linear-gradient(to bottom, #ffcc00, #ffcc00 50%, #8B4513 50%);/* Código hexadecimal para el color tierra */
 	color: white;
 	text-align: center;
 }
