@@ -62,9 +62,8 @@ button {
 	font-size: 18px;
 	margin-bottom: 20px;
 }
-button.instagram {
-	background-color: #833AB4;
-}
+
+
 .image-container {
 	display: flex;
 	justify-content: center;
