@@ -45,40 +45,6 @@
   background-color: #25D366;
 }
 
-/* Establecemos la imagen de fondo y su tamaño */
-body {
-    background-image: url('logo.jpg');
-    background-size: cover;
-}
-/* Creamos la capa de fondo del contenido */
-.content {
-    background-color: #fff;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-}
-/* Establecemos la velocidad de desplazamiento de la capa de fondo del contenido */
-.content {
-    transform: translateZ(0) scale(1);
-    z-index: 2;
-    will-change: transform;
-}
-/* Establecemos la velocidad de desplazamiento de la capa de fondo de la imagen */
-body:before {
-    content: "";
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRR_AVDwlERtbUlv-GObrCQo0EcC11KpXnwQ&usqp=CAU');
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    will-change: transform;
-}
 h1 {
 	color: green;
 }
