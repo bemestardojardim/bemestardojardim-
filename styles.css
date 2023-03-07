@@ -47,7 +47,7 @@
 
 /* Establecemos la imagen de fondo y su tamaño */
 body {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiOXRkWhKlHjJnYoSZrKbL7oQzjscx-q354Q&usqp=CAU');
+    background-image: url('logo.jpg');
     background-size: cover;
 }
 /* Creamos la capa de fondo del contenido */
