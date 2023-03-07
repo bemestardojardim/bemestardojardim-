@@ -33,6 +33,45 @@
   font-size: 16px;
   z-index: 999;
 }
+body {
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+.uniform-image {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 30px 0;
+}
+
+.uniform-image img {
+	max-width: 50%;
+	margin-right: 30px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-info {
+	margin: 30px 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul li {
+	margin-bottom: 10px;
+}
+
+ul ul {
+	margin-left: 20px;
+}
+
 
 
 .btn-instagram img {
