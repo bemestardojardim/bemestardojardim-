@@ -124,4 +124,59 @@ button {
   border-radius: 5px;
   text-decoration: none;
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.logo a {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+  }
+}
 
