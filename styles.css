@@ -47,7 +47,7 @@
 
 /* Establecemos la imagen de fondo y su tamaño */
 body {
-    background-image: url('https://example.com/background.jpg');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiOXRkWhKlHjJnYoSZrKbL7oQzjscx-q354Q&usqp=CAU');
     background-size: cover;
 }
 /* Creamos la capa de fondo del contenido */
@@ -69,7 +69,7 @@ body {
 /* Establecemos la velocidad de desplazamiento de la capa de fondo de la imagen */
 body:before {
     content: "";
-    background-image: url('https://example.com/background.jpg');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRR_AVDwlERtbUlv-GObrCQo0EcC11KpXnwQ&usqp=CAU');
     background-size: cover;
     position: fixed;
     top: 0;
