@@ -57,5 +57,14 @@
       <p>Envíenos un correo electrónico: <a href="mailto:bemestardojardim@gmail.com">bemestardojardim@gmail.com</a></p>
     </footer>
 <script src="main.js"></script>
+<script>
+  const menuToggle = document.querySelector('.menu-toggle input');
+  const nav = document.querySelector('nav ul');
+
+  menuToggle.addEventListener('click', function() {
+    nav.classList.toggle('slide');
+  });
+</script>
+
 </body>
 </html>
