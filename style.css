@@ -19,9 +19,26 @@ nav a {
   display: block;
   padding: 10px;
   text-decoration: none;
-  color: #ff0000;
+  color: #333;
+  border: 1px solid #ccc; /* Agrega un borde alrededor de cada item */
+  border-radius: 5px; /* Agrega un borde redondeado */
+  margin-right: 10px; /* Agrega un margen derecho para separar los items */
 }
 
+nav a:hover {
+  background-color: #eee; /* Cambia el color de fondo al pasar el mouse por encima */
+}
+
+nav a.button {
+  background-color: #0077cc; /* Cambia el color de fondo para los botones */
+  color: #fff; /* Cambia el color del texto para los botones */
+  border: none; /* Remueve el borde para los botones */
+  padding: 10px 20px; /* Ajusta el relleno para los botones */
+}
+
+nav a.button:hover {
+  background-color: #005599; /* Cambia el color de fondo al pasar el mouse por encima */
+}
 /* Estilos para la sección de descripción */
 .descripcion {
 background-color: #f5f5f5;
