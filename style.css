@@ -1,9 +1,10 @@
 /* Estilos para el header y el menú de navegación */
 header {
-background-color: #33691E;
-color: #fff;
-padding: 20px;
+  background-color: #c5e1a5; /* Cambiar el color de fondo */
+  color: #333; /* Cambiar el color de las letras */
+  padding: 20px;
 }
+
 
 nav ul {
   list-style: none;
@@ -16,6 +17,7 @@ nav li {
 }
 
 nav a {
+    background-color: #eee;
   display: block;
   padding: 10px;
   text-decoration: none;
@@ -30,16 +32,8 @@ nav a:hover {
   color: #33691E;
 }
 
-nav a.button {
-  background-color: #fff; /* Cambia el color de fondo para los botones */
-  color: #33691E; /* Cambia el color del texto para los botones */
-  border: none; /* Remueve el borde para los botones */
-  padding: 10px 20px; /* Ajusta el relleno para los botones */
-}
 
-nav a.button:hover {
-  background-color: #005599; /* Cambia el color de fondo al pasar el mouse por encima */
-}
+
 /* Estilos para la sección de descripción */
 .descripcion {
 background-color: #f5f5f5;
