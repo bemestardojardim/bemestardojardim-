@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Galería de servicios de jardinería</title>
+    <style>
+      /* Estilos personalizados para la sección de descripción */
+      .description {
+        background-color: #f8f8f8;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      
+      /* Estilos para la galería de fotos */
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 -10px;
+      }
+      
+      .gallery-item {
+        width: calc(33.33% - 20px);
+        margin: 10px;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+      
+      .gallery-item:hover img {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Galería de servicios de jardinería</h1>
+    <div class="description">
+      <p>En nuestra empresa de jardinería ofrecemos una amplia variedad de servicios para mantener tus espacios verdes en perfecto estado. Desde diseño y construcción de jardines hasta poda de árboles y limpieza de espacios exteriores, nuestros expertos jardineros te ayudarán a crear el jardín de tus sueños.</p>
+    </div>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/500x500.png?text=Servicio+1" alt="Servicio 1">
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/500x500.png?text=Servicio+2" alt="Servicio 2">
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/500x500.png?text=Servicio+3" alt="Servicio 3">
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/500x500.png?text=Servicio+4" alt="Servicio 4">
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/500x500.png?text=Servicio+5" alt="Servicio 5">
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/500x500.png?text=Servicio+6" alt="Servicio 6">
+      </div>
+    </div>
+  </body>
+</html>
