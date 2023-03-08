@@ -5,6 +5,45 @@ color: #fff;
 padding: 20px;
 }
 
+section {
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
 /* Estilos para el contenido principal */
 main {
 padding: 20px;
