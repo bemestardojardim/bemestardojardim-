@@ -6,7 +6,11 @@ header {
 }
 --------------------menu--------------
 .navbar {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 10px 20px;
 }
 
 .menu-toggle {
@@ -44,7 +48,7 @@ header {
   text-decoration: none;
 }
 
-#menu-toggle:checked + .menu {
+#menu-toggle:checked ~ .menu {
   display: block;
 }
 
@@ -82,7 +86,7 @@ footer a {
   color: #fff;
   text-decoration: none;
 }
---------------------------------------------------------
+------------------------- sobre nos-------------------------------
 		.about-us {
 			background-color: #f7f7f7;
 			padding: 50px;
