@@ -27,11 +27,12 @@ nav a {
 
 nav a:hover {
   background-color: #eee; /* Cambia el color de fondo al pasar el mouse por encima */
+  color: #33691E;
 }
 
 nav a.button {
-  background-color: #0077cc; /* Cambia el color de fondo para los botones */
-  color: #fff; /* Cambia el color del texto para los botones */
+  background-color: #fff; /* Cambia el color de fondo para los botones */
+  color: #33691E; /* Cambia el color del texto para los botones */
   border: none; /* Remueve el borde para los botones */
   padding: 10px 20px; /* Ajusta el relleno para los botones */
 }
