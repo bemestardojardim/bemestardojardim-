@@ -4,23 +4,114 @@ header {
   color: #fff;
   padding: 20px;
 }
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+--------------------menu--------------
+.navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
 }
 
-nav ul li {
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 2px;
+  width: 25px;
+  background-color: #333;
+  margin: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu li {
+  list-style: none;
   margin-right: 20px;
 }
 
-nav ul li a {
-  color: #fff;
+.menu li a {
   text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
 }
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  
+  .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .menu li {
+    margin: 10px 0;
+  }
+  
+  .menu-toggle:checked + span {
+    transform: rotate(45deg);
+  }
+  
+  .menu-toggle:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu-toggle:checked ~ ul li {
+    opacity: 0;
+  }
+  
+  .menu-toggle:checked ~ ul li:nth-child(1) {
+    animation: fadeIn 0.5s forwards ease-in-out;
+  }
+  
+  .menu-toggle:checked ~ ul li:nth-child(2) {
+    animation: fadeIn 0.6s forwards ease-in-out;
+  }
+  
+  .menu-toggle:checked ~ ul li:nth-child(3) {
+    animation: fadeIn 0.7s forwards ease-in-out;
+  }
+  
+  .menu-toggle:checked ~ ul li:nth-child(4) {
+    animation: fadeIn 0.8s forwards ease-in-out;
+  }
+  
+  .menu-toggle:checked ~ ul li:nth-child(5) {
+    animation: fadeIn 0.9s forwards ease-in-out;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+----------------------------menu---------
 
 /* Estilos para el contenido principal */
 main {
