@@ -1,0 +1,56 @@
+/* Estilos para el header y el menú de navegación */
+header {
+  background-color: #33691E;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos para el contenido principal */
+main {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 40px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 40px;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #8BC34A;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
