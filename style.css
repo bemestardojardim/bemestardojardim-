@@ -5,64 +5,21 @@ color: #fff;
 padding: 20px;
 }
 
-section {
-  background-color: #f7f7f7;
-  padding: 20px;
-}
-
-h2 {
-  color: #333;
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-p {
-  color: #666;
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-ul {
+nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-li {
-  margin-bottom: 10px;
+nav li {
+  display: inline-block;
 }
 
-a {
-  color: #333;
+nav a {
+  display: block;
+  padding: 10px;
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-
-/* Estilos para el contenido principal */
-main {
-padding: 20px;
-}
-
-h1 {
-font-size: 3em;
-text-align: center;
-}
-
-h2 {
-font-size: 36px; /* tamaño de fuente para los títulos de nivel 2 /
-margin-bottom: 20px;
-color: #555; / color del texto */
-}
-
-ul {
-list-style-type: disc;
-margin-left: 40px;
+  color: #333;
 }
 
 /* Estilos para la sección de descripción */
