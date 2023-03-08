@@ -5,52 +5,29 @@ header {
   padding: 20px;
 }
 --------------------menu--------------
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #f2f2f2;
-  padding: 10px 20px;
-}
-
-.menu-toggle {
-  display: block;
-  cursor: pointer;
-}
-
-.menu-toggle span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin-bottom: 5px;
-  background-color: black;
-}
-
-.menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  padding: 0;
-  margin: 0;
-  background-color: white;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.menu li {
-  display: block;
-}
-
-.menu li a {
-  display: block;
-  padding: 10px 20px;
-  color: black;
-  text-decoration: none;
-}
-
-#menu-toggle:checked ~ .menu {
-  display: block;
-}
+<style>
+  /* Estilos para la sección de descripción */
+  #descripcion {
+    background-color: #f8f8f8;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+  }
+  
+  #descripcion h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #descripcion p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+</style>
 
 ----------------------------menu---------
 
