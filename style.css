@@ -1,8 +1,28 @@
+/* Estilos de Pàgina */
+body {
+      background-color: #f2f2f2; /* un tono claro de gris */
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Texto del encabezado */
+header h1, header h2 {
+  color: #fff; /* blanco */
+}
+
+/* Enlaces */
+a {
+  color: #8f4c3e; /* un tono de marrón oscuro */
+}
+
 /* Estilos para el header y el menú de navegación */
 header {
   background-color: #c5e1a5; /* Cambiar el color de fondo */
   color: #333; /* Cambiar el color de las letras */
-  padding: 20px;
+  padding: 10px;
 }
 
 
@@ -55,11 +75,24 @@ font-size: 18px;
 line-height: 1.5;
 }
 
-/* Estilos para la sección "Sobre Nosotros" */
+/* Estilos y animaciones para la sección "Sobre Nosotros" */
+
+
+
+
 .about-us {
+
+    opacity: 0;
+  transition: opacity 1s ease;
 background-color: #f7f7f7;
 padding: 50px;
 text-align: center;
+}
+
+
+
+.about-us.show {
+  opacity: 1;
 }
 
 .about-us h2 {
@@ -69,11 +102,14 @@ margin-bottom: 30px;
 }
 
 .about-us p {
-font-size: 18px;
-color: #666;
+      color: #556b2f; /* un tono de verde oscuro */
+
+font-size: 24px;
 line-height: 1.5;
 margin-bottom: 30px;
 }
+
+
 
 .about-us img {
 width: 300px;
@@ -151,17 +187,7 @@ color: #fff;
 
 /* Pàgina de servicios */
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
 
-header {
-  background-color: #007f00;
-  color: white;
-  padding: 10px;
-}
 
 .menu {
   display: flex;
@@ -200,4 +226,16 @@ header {
   padding: 10px;
   background-color: white;
   box-shadow: 1px 1px 2px grey;
+}
+
+/* Caja de contacto */
+.contact-box {
+  background-color: #6b8e23; /* un tono de verde oliva */
+  color: #fff; /* blanco */
+}
+
+/* Botón de enviar en la caja de contacto */
+.contact-box button {
+  background-color: #8f4c3e; /* un tono de marrón oscuro */
+  color: #fff; /* blanco */
 }
