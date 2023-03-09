@@ -3,12 +3,17 @@
   <head>
     <!-- Configuração da página -->
     <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
 
     <title>Bem Estar do Jardim</title>
 <!-- Ligação ao arquivo de estilos -->
 <link rel="stylesheet" href="style.css">
+              <link rel="stylesheet" href="./styles.css">
+       <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://unpkg.com/typewriter-effect@2.17.0/dist/core.js"></script>
@@ -20,18 +25,22 @@
     <header>
       <!-- Barra de navegação -->
       <nav>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="servicios.html">Serviços</a></li>
-          <li><a href="fotos.html">Galeria</a></li>
-          <li><a href="contato.html">Contato</a></li> <!-- Adicione a classe "button" para criar um botão -->
-        </ul>
-      </nav>
+  <div class="logo-container">
+    <img src="logo.png" alt="Logo de mi empresa">
+    <h1>Bem Estar do Jardim</h1>
+  </div>
+  <ul>
+    <li><a href="index.html">Início</a></li>
+    <li><a href="servicios.html">Serviços</a></li>
+    <li><a href="fotos.html">Galeria</a></li>
+    <li><a href="contato.html">Contato</a></li>
+  </ul>
+</nav>
+
     </header>
     <main>
       <!-- Cabeçalho principal -->
-      <h1 class="description">Bem Estar do Jardim</h1>
-      <h3 class="description">Na Bem Estar do Jardim, cultivamos a beleza natural e transformamos seus espaços em um oásis de tranquilidade e harmonia.</h3>
+      
 
         <!-- Seção "Quem somos" -->
   <section class="about-us">
@@ -39,15 +48,8 @@
     <img src="https://via.placeholder.com/300x300" alt="Foto da equipe">
     <p>Nós somos uma equipe apaixonada por jardinagem e paisagismo. Adoramos criar espaços verdes únicos e personalizados para nossos clientes e sempre nos esforçamos para superar suas expectativas!</p>
   </section>
-  
-  <!-- Seção de descrição -->
-  <div class="description">
-    <h2>Bem-vindo à Bem Estar do Jardim</h2>
-    <p>Oferecemos serviços de jardinagem e paisagismo para ajudá-lo a criar e manter um espaço verde bonito e saudável em sua casa ou empresa. Desde o design até a instalação e a manutenção contínua, estamos aqui para ajudá-lo em todo o processo.</p>
-    <a href="servicos.html" class="btn">Nossos serviços:</a>
-  </div>
-  
-  <!-- Lista de serviços -->
+        
+        <!-- Lista de serviços -->
   <div class="servicios-container">
   <h2 class="servicios-titulo">Nossos serviços</h2>
 
@@ -59,6 +61,54 @@
     <li>Controle de pragas e doenças</li>
   </ul>
 </div>
+  
+  <!-- Seção de carrousel -->
+        
+     <div class="carrousel">
+        <div class="conteCarrousel">
+            <div class="itemCarrousel" id="itemCarrousel-1">
+                <div class="itemCarrouselTarjeta"><img src="https://img.freepik.com/fotos-premium/planta-de-amaranto-vermelho-indiano-crescendo-no-jardim-de-verao-vegetais-de-folhas-cereais-e-plantas-ornamentais-fonte-de-proteinas-e-aminoacidos_127089-18457.jpg">
+                </div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-3">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-2">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-2">
+                <div class="itemCarrouselTarjeta"><img src="https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia29070/strelitzia-afe.jpg"></div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-1">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-3">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-3">
+                <div class="itemCarrouselTarjeta"><img src="https://www.10wallpaper.com/wallpaper/1366x768/1302/remember_love-Flowers_HD_widescreen_wallpaper_1366x768.jpg"></div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-2">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#itemCarrousel-1">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="conteCarrouselController">
+            <a href="#itemCarrousel-1">•</a>
+            <a href="#itemCarrousel-2">•</a>
+            <a href="#itemCarrousel-3">•</a>
+        </div>
+    </div>
+  
+  
 
 
     </main>
