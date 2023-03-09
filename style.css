@@ -6,6 +6,8 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
+    background-image: url('https://png.pngtree.com/background/20210715/original/pngtree-plant-palm-leaf-simple-background-picture-image_1325702.jpg');
+  background-size: cover;
 }
 
 /* Texto del encabezado */
@@ -20,7 +22,7 @@ a {
 
 /* Estilos para el header y el menú de navegación */
 header {
-  background-color: #c5e1a5; /* Cambiar el color de fondo */
+  background-color: #8BC34A; /* Cambiar el color de fondo */
   color: #333; /* Cambiar el color de las letras */
   padding: 10px;
 }
@@ -147,25 +149,38 @@ text-decoration: none;
 
 /* Estilos para el servicios titulo */
 .servicios-titulo {
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 2rem;
+  color: #2b2b2b;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .servicios-lista {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1.5rem;
-  line-height: 2rem;
+ list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
-.servicios-lista li {
-  margin: 1rem 0;
-}
+
+.servicios-lista li:before {
+    content: "✓ ";
+    color: #4caf50;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+/* servicios contairner */
+
+.servicios-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    max-width: 600px;
+  }
 
 
 /* Botón genérico */
