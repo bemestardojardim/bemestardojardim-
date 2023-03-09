@@ -154,8 +154,9 @@ text-decoration: none;
 }
 
 .logo-container img {
-  height: 50px;
-  margin-right: 10px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .logo-container h1 {
@@ -163,6 +164,26 @@ text-decoration: none;
   font-weight: bold;
 }
 
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Futura', sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  text-transform: uppercase;
+
+}
+
+.title-container {
+  flex-grow: 1;
+}
 
 /* Estilos para el servicios titulo */
 .servicios-titulo {
@@ -294,6 +315,8 @@ color: #fff;
     position: relative;
     width: 100%;
     height: 100%;
+
+    
 }
 
 .itemCarrouselTarjeta{
@@ -316,8 +339,11 @@ color: #fff;
 }
 
 .itemCarrouselArrows > i:hover {
+    
     cursor: pointer;
 }
+
+
 
 #itemCarrousel-1{
     background-color: rgb(226, 50, 50);
@@ -351,3 +377,26 @@ img{
     height: 100%;
 }
 ------------------------------------
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 480px) {
+    img{
+    width: 100%;
+    height: 100%;
+}
+  /* Reglas de estilo para móvil */
+}
+
+/* Estilos para escritorio */
+@media only screen and (min-width: 768px) {
+    .itemCarrousel{
+    position: relative;
+    width: 35%;
+    height: 100%;
+        margin: 0 auto; /* Agregar esta propiedad para centrar horizontalmente */
+
+    
+}
+   
+    
+  /* Reglas de estilo para escritorio */
+}
