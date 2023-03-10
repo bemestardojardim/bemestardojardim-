@@ -1,126 +1,82 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Configuração da página -->
     <meta charset="UTF-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    
+    <!-- Enlaces a fuentes externas -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous">
+    
+    <!-- Enlaces a archivos CSS y JavaScript -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@2.17.0/dist/core.js"></script>
+    <script src="main.js"></script>
 
     <title>Bem Estar do Jardim</title>
-<!-- Ligação ao arquivo de estilos -->
-<link rel="stylesheet" href="style.css">
-              <link rel="stylesheet" href="./styles.css">
-       <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
-
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://unpkg.com/typewriter-effect@2.17.0/dist/core.js"></script>
-
-
-  <script src="main.js"></script>
   </head>
+  
   <body>
     <header>
-      <!-- Barra de navegação -->
+      <!-- Barra de navegación -->
       <nav>
-  <div class="logo-container">
-  <div class="logo">
-    <img src="logo.png" alt="Logo de mi empresa">
-  </div>
-  <div class="title-container">
-    <h1>Bem Estar do Jardim</h1>
-  </div>
-</div>
+        <div class="logo-container">
+          <div class="logo">
+            <img src="logo.png" alt="Logo de mi empresa">
+          </div>
+          <div class="title-container">
+            <h1>Bem Estar do Jardim</h1>
+          </div>
+        </div>
 
-  <ul>
-    <li><a href="index.html">Início</a></li>
-    <li><a href="servicios.html">Serviços</a></li>
-    <li><a href="fotos.html">Galeria</a></li>
-    <li><a href="contato.html">Contato</a></li>
-  </ul>
-</nav>
-
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicios.html">Serviços</a></li>
+          <li><a href="fotos.html">Galeria</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
     </header>
+
     <main>
-      <!-- Cabeçalho principal -->
+      <!-- Cabecera principal -->
       
+      <!-- Sección "Quem somos" -->
+      <section class="about-us">
+        <h2><a href="sobre-nos.html">Quem somos</a></h2>
+        <img src="https://via.placeholder.com/300x300" alt="Foto da equipe">
+        <p>Nós somos uma equipe apaixonada por jardinagem e paisagismo. Adoramos criar espaços verdes únicos e personalizados para nossos clientes e sempre nos esforçamos para superar suas expectativas!</p>
+      </section>
 
-        <!-- Seção "Quem somos" -->
-  <section class="about-us">
-    <h2><a href="sobre-nos.html">Quem somos</a></h2>
-    <img src="https://via.placeholder.com/300x300" alt="Foto da equipe">
-    <p>Nós somos uma equipe apaixonada por jardinagem e paisagismo. Adoramos criar espaços verdes únicos e personalizados para nossos clientes e sempre nos esforçamos para superar suas expectativas!</p>
-  </section>
-        
-        <!-- Lista de serviços -->
-  <div class="servicios-container">
-  <h2 class="servicios-titulo">Nossos serviços</h2>
+      <!-- Lista de servicios -->
+      <div class="servicios-container">
+        <h2 class="servicios-titulo">Nossos serviços</h2>
 
-  <ul class="servicios-lista">
-    <li>Corte e poda de grama</li>
-    <li>Irrigação e fertilização de plantas</li>
-    <li>Poda e manutenção de árvores</li>
-    <li>Design e construção de jardins</li>
-    <li>Controle de pragas e doenças</li>
-  </ul>
-</div>
-  
-  <!-- Seção de carrousel -->
-        
-     <div class="carrousel">
-        <div class="conteCarrousel">
-            <div class="itemCarrousel" id="itemCarrousel-1">
-                <div class="itemCarrouselTarjeta"><img src="https://lh3.googleusercontent.com/Fi1NRDIgu_k2-_UGGBp8m5LIZiiwV5nZrHpF7hy20SXRP1eO83bf2wz1jADSozHRTLrDrbt1WOIFxv3BYCp9QZQpCVd0K5CocBkrIqq9LQ">
-                </div>
-                <div class="itemCarrouselArrows">
-                    <a href="#itemCarrousel-3">
-                        <i class="fas fa-chevron-left"></i>
+        <ul class="servicios-lista">
+          <li>Corte e poda de grama</li>
+          <li>Irrigação e fertilização de plantas</li>
+          <li>Poda e manutenção de árvores</li>
+          <li>Design e construção de jardins</li>
+          <li>Controle de pragas e doenças</li>
+        </ul>
+      </div>
 
-                    </a>
-                    <i class="fas fa-chevron-left"><span>Corte e poda de grama</span></i>
-                    <a href="#itemCarrousel-2">
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="itemCarrousel" id="itemCarrousel-2">
-                <div class="itemCarrouselTarjeta"><img src="https://eos.com/wp-content/uploads/2021/03/nutrients-in-soil.jpg"></div>
-                <div class="itemCarrouselArrows">
-                    <a href="#itemCarrousel-1">
-                        <i class="fas fa-chevron-left"></i>
-                    </a>
-                    <i class="fas fa-chevron-left"><span>Irrigação e fertilização de plantas</span></i>
-                    <a href="#itemCarrousel-3">
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="itemCarrousel" id="itemCarrousel-3">
-                <div class="itemCarrouselTarjeta"><img src="https://parquesalegres.org/wp-content/uploads/2018/06/Foto-poda-%C3%A1rboles-1.jpg"></div>
-                <div class="itemCarrouselArrows">
-                    <a href="#itemCarrousel-2">
-                        <i class="fas fa-chevron-left"></i>
-                    </a>
-                    <i class="fas fa-chevron-left"><span>Poda e manutenção de árvores</span></i>
-                    <a href="#itemCarrousel-1">
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="conteCarrouselController">
-            <a href="#itemCarrousel-1">•</a>
-            <a href="#itemCarrousel-2">•</a>
-            <a href="#itemCarrousel-3">•</a>
-        </div>
+      <!-- Carrusel de imágenes 
+      <div class="slider-frame">
+        <ul>
+          <li><img src="slider1.jpg" alt=""></li>
+          <li><img src="slider2.jpg" alt=""></li>
+          <li><img src="slider3.jpg" alt=""></li>
+          <li><img src="slider4.jpeg" alt=""></li>-->
+
+        </ul>
     </div>
-  
-  
 
 
-    </main>
+    </main >
     <footer>
       <p>Contate-nos pelo WhatsApp: <a href="https://wa.me/5522998883449">+55 22 99888-3449</a></p>
       <p>Envie-nos um e-mail: <a href="mailto:bemestardojardim@gmail.com">bemestardojardim@gmail.com</a></p>
