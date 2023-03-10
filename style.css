@@ -8,6 +8,9 @@ body {
   padding: 0;
     background-image: url('https://veiling.com.br/wp-content/uploads/2021/09/GE%CC%81RBERA-IMG_9176-2.jpg');
   background-size: cover;
+      background-repeat: no-repeat;
+
+
 }
 
 /* Texto del encabezado */
@@ -297,127 +300,61 @@ color: #fff;
 }
 
 /* Carrousel */
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: lato;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 50px;
 }
 
 
 
-    .fas.fa-chevron-left span {
-        font-size: 2em;
-        background-color: rgba(255, 255, 255, 0.5);
-        text-transform: uppercase;
-        color: black;
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-        padding: 0.5em;
-        border-radius: 0.5em;
-        text-align: center;
-    }
-
-
-
-
-
-.carrousel{
-    width: 100%;
+.slider-frame {
+	width: 100%;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
 }
 
-.conteCarrousel{
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
 }
 
-.itemCarrousel{
-    position: relative;
-    width: 100%;
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
     height: 100%;
-
-    
-}
-
-.itemCarrouselTarjeta{
     width: 100%;
-    height: 100%;
+    object-fit: cover;
 }
 
-.itemCarrouselArrows{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px; 
-}
 
-.itemCarrouselArrows > i:hover {
-    
-    cursor: pointer;
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
 }
 
 
 
-#itemCarrousel-1{
-    background-color: rgb(226, 50, 50);
-}
 
-#itemCarrousel-2{
-    background-color: rgb(50, 200, 226);
-}
-
-#itemCarrousel-3{
-    background-color: rgb(200, 226, 50);
-}
-
-.conteCarrouselController{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.conteCarrouselController > a{
-    text-decoration: none;
-    font-size: 2em;
-    color: grey;
-}
-
-.itemCarrouselArrows > a > i{
-    color: white;
-}
-img{
-    width: 100%;
-    height: 100%;
-}
-------------------------------------
-/* Estilos para dispositivos móviles */
-@media only screen and (max-width: 480px) {
-    img{
-    width: 100%;
-    height: 100%;
-}
-  /* Reglas de estilo para móvil */
-}
-
-/* Estilos para escritorio */
-@media only screen and (min-width: 768px) {
-    .itemCarrousel{
-    position: relative;
-    width: 35%;
-    height: 100%;
-        margin: 0 auto; /* Agregar esta propiedad para centrar horizontalmente */
-
-    
-}
-   
-    
-  /* Reglas de estilo para escritorio */
-}
