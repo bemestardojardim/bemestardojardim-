@@ -6,7 +6,7 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
-    background-image: url('https://veiling.com.br/wp-content/uploads/2021/09/GE%CC%81RBERA-IMG_9176-2.jpg');
+    background-image: url('slider4.jpeg');
   background-size: cover;
       background-repeat: no-repeat;
 
@@ -76,9 +76,14 @@ margin-top: 0;
 }
 
 .descripcion p {
-font-size: 18px;
-line-height: 1.5;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: bold;
 }
+p {
+  font-weight: bold;
+}
+
 
 /* Estilos y animaciones para la sección "Sobre Nosotros" */
 
@@ -89,7 +94,7 @@ line-height: 1.5;
 
     opacity: 0;
   transition: opacity 1s ease;
-background-color: #f7f7f7;
+background-color: rgba(247, 247, 247, 0.9);
 padding: 50px;
 text-align: center;
 }
@@ -200,8 +205,9 @@ h1 {
  list-style: none;
     padding: 0;
     margin: 0;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.5;
+    
 }
 
 
@@ -218,7 +224,7 @@ h1 {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
     margin: 20px auto;
     max-width: 600px;
     text-align: center;
@@ -308,7 +314,7 @@ color: #fff;
 
 h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     padding-top: 50px;
 }
 
