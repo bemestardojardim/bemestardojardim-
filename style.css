@@ -1,17 +1,149 @@
 /* Estilos de Pàgina */
 body {
-      background-color: #f2f2f2; /* un tono claro de gris */
+      background-color: #ccc; /* un tono claro de gris */
 
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0;
-    background-image: url('slider4.jpeg');
+    background-image: url('');
   background-size: cover;
       background-repeat: no-repeat;
 
 
 }
+
+
+.contenedor-bloques {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.contacto-caja,
+.endereco-caja {
+  width: 100%;
+  max-width: 300px;
+  margin: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contacto-caja,
+  .endereco-caja {
+    width: calc(50% - 40px);
+  }
+}
+
+
+
+
+
+.contenedor-principal {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto-caja, .endereco-caja {
+  display: inline-block;
+  width: 50px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+.titulo {
+  font-size: 50px; /* tamaño de fuente */
+  color: #fff; /* color de texto */
+  text-align: center; /* centrar horizontalmente */
+  text-shadow: 2px 2px 4px #000000; /* sombra de texto */
+}
+
+
+
+
+
+
+.contenedor {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0069d9;
+}
+
+.llamar-ahora {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.llamar-ahora:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
 
 /* Texto del encabezado */
 header h1, header h2 {
@@ -92,17 +224,67 @@ p {
 
 .about-us {
 
-    opacity: 0;
-  transition: opacity 1s ease;
 background-color: rgba(247, 247, 247, 0.9);
 padding: 50px;
 text-align: center;
 }
 
+/* Estilos de primera imagen" */
+
+#mi-imagen {
+			max-width: 100%;
+			height: auto;
+		}
+
+
+#contenedor {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mi-imagen {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#texto {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+
+
+
+   #mapa-container {
+        margin: 0 auto;
+        text-align: center;
+      }
+
+
+
+
+
+
 
 
 .about-us.show {
-  opacity: 1;
 }
 
 .about-us h2 {
@@ -194,41 +376,41 @@ h1 {
 }
 
 /* Estilos para el servicios titulo */
+
+
 .servicios-titulo {
-  color: #2b2b2b;
-    font-size: 28px;
     text-align: center;
-    margin-bottom: 20px;
-}
-
-.servicios-lista {
- list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 24px;
-    line-height: 1.5;
-    
-}
-
-
-.servicios-lista li:before {
-    content: "✓ ";
-    color: #4caf50;
+    font-size: 28px;
     font-weight: bold;
-    margin-right: 5px;
+    margin-top: 50px;
+  }
+  
+  .services-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .services-list li {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
   }
 
 /* servicios contairner */
 
-.servicios-container {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-    margin: 20px auto;
-    max-width: 600px;
-    text-align: center;
-  }
+
 
 
 
@@ -364,3 +546,44 @@ h2 {
 
 
 
+
+
+
+
+
+
+.contacto-caja, .endereco-caja, .horario-caja {
+display: inline-block;
+vertical-align: top;
+width: 300px;
+padding: 20px;
+margin-right: 20px;
+}
+
+
+
+.contacto-caja h2, .endereco-caja h2, .horario-caja h2 {
+  margin-top: 0;
+}
+
+.contacto-caja a, .endereco-caja a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.contacto-caja p, .endereco-caja p, .horario-caja p {
+  margin: 0;
+}
+
+.horario-caja ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.horario-caja li {
+  margin-bottom: 10px;
+}
