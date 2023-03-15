@@ -38,7 +38,7 @@ function verificarCampos() {
 
 
 document.getElementById("ver-rutas-btn").addEventListener("click", function() {
-  window.open("https://cdn.worldvectorlogo.com/logos/logo-google-maps.svg", "_blank");
+  window.open("https://www.google.com/maps?q=rua+da+esperanca+n207+estrada+do+palmital+casimiro+de+abreu+rj+28860-000+brasil", "_blank");
 });
 
 
