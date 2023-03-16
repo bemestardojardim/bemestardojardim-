@@ -25,7 +25,30 @@
     <title>Bem Estar do Jardim</title>
   </head>
   
-  <body>
+  <body onload="mostrarHorario()">
+      
+      
+      
+      
+      
+      
+      <!-- Barra de navegación -->
+	<div class="navbar">
+		<a class="active" href="tel:+5522998883449">Ligar</a>
+		<a href="#agendar">Agendar Horario</a>
+		<a href="https://www.google.com.br/maps/dir//Barra+de+S%C3%A3o+Jo%C3%A3o,+Casimiro+de+Abreu+-+Estado+de+R%C3%ADo+de+Janeiro,+28860-000/@-22.506812,-42.014944,19z/data=!4m9!4m8!1m0!1m5!1m1!1s0x97b2057175f5af:0x15a68f0c6048a19d!2m2!1d-41.9878239!2d-22.5742501!3e0" target="_blank">Rotas</a>
+	</div>
+
+      
+      
+      
+      
+      
+      
+      
+    <h1>Horario de apertura</h1>
+    <p id="horario" class="cerrado">Fechado</p>
+  
     <header>
       <!-- Barra de navegación -->
     <input type="checkbox" id="btn-menu">
@@ -43,6 +66,7 @@
             
         </ul>
         </nav>
+        
     </header>
 
     <main>
@@ -51,7 +75,8 @@
         
 <div id="contenedor">
 		<img id="mi-imagen" src="logo.png" alt="Descripción de la imagen">
-		<div id="texto">RIO DAS OSTRAS LIMPEZA & JARDINAGEM</div>
+		<div id="texto"> BEM ESTAR DO JARDIM 
+           RIO DAS OSTRAS LIMPEZA & JARDINAGEM</div>
 	</div>
         
         
@@ -88,27 +113,27 @@
     <div class="contenedor-principal" style="display: flex;">
   <!-- código uno aquí -->
   <div style="flex-grow: 1; flex-basis: 0;">
-    <h1 class="titulo">Mi ubicación en Google Maps</h1>
+    <h1 class="titulo">Nossa Ubicaçao em Google Maps</h1>
     <div id="mapa-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48338.98456965966!2d-122.08424993549951!3d37.42247654598172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e4f6c8e4df1%3A0x4a501367f076adff!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1647506028707!5m2!1sen!2sus" width="540px" height="500px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d793.9805640613439!2d-42.01494399982805!3d-22.506812008834245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sbr!4v1678975086934!5m2!1ses!2sbr" width="540px" height="500px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
   </div>
   <!-- código dos aquí -->
-  <div class="contenedor" style="flex-grow: 1; flex-basis: 0;">
-    <h1>Agenda tu cita</h1>
+  <div class="contenedor" id="agendar" style="flex-grow: 1; flex-basis: 0;">
+    <h1>vamos marcar </h1>
     <form>
-      <label for="nombre">Nombre:</label>
+      <label for="nombre">NOME :</label>
       <input type="text" id="nombre" required>
 
-      <label for="fecha">Fecha:</label>
+      <label for="fecha">DATA:</label>
       <input type="date" id="fecha" required>
 
       <label for="hora">Hora:</label>
       <input type="time" id="hora" required>
 
-      <button type="button" onclick="verificarCampos()">Agendar cita</button>
+      <button type="button" onclick="verificarCampos()">MARCAR AGORA</button>
 
-      <a href="tel:+5522998883449" class="llamar-ahora">Llamar ahora</a>
+      <a href="tel:+5522998883449" class="llamar-ahora">LIGAR</a>
     </form>
   </div>
 </div>
@@ -133,8 +158,8 @@
 <div class="endereco-caja">
   <h2>Endereço</h2>
   <button id="ver-rutas-btn">VER RUTAS</button>
-  <p>rua da esperança n*207</p>
-  <p>Estrada do Palmital</p>
+  <p>Rua Antonio Custodio</p>
+  <p>Estrada Vila Verde km5  </p>
   <p>Casimiro de Abreu - RJ</p>
   <p>28860-000</p>
   <p>Brasil</p>
