@@ -1,100 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
-  <title>Contatos</title>
-        <link rel="stylesheet" href="style.css">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <title>Contatos</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body onload="mostrarHorario()">
+        <!-- Barra de navegación -->
+        <div class="navbar">
+            <a class="active" href="tel:+5522998883449">Ligar</a>
+            <a href="#agendar">Agendar Horario</a>
+            <a
+                href="https://www.google.com.br/maps/dir//Barra+de+S%C3%A3o+Jo%C3%A3o,+Casimiro+de+Abreu+-+Estado+de+R%C3%ADo+de+Janeiro,+28860-000/@-22.506812,-42.014944,19z/data=!4m9!4m8!1m0!1m5!1m1!1s0x97b2057175f5af:0x15a68f0c6048a19d!2m2!1d-41.9878239!2d-22.5742501!3e0"
+                target="_blank"
+                >Rotas</a
+            >
+        </div>
+        <header>
+            <header>
+                <!-- Barra de navegación -->
+                <input type="checkbox" id="btn-menu" />
+                <label for="btn-menu">
+                    <img src="icono-menu.png" alt="" />
+                </label>
 
-  <style>
-    /* Estilos CSS personalizados */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #333;
-      color: #fff;
-    }
-      #contacto h1 {
-  text-align: left; /* Alinea el encabezado a la izquierda */
-}
-    h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-    section {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      padding: 20px;
-    }
-    .card {
-      background-color: #f5f5f5;
-      border-radius: 5px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-      margin: 20px;
-      overflow: hidden;
-      width: 300px;
-    }
-    .card img {
-      max-width: 100%;
-      height: auto;
-    }
-    .card h2 {
-      font-size: 24px;
-      margin: 10px;
-    }
-    .card p {
-      font-size: 16px;
-      margin: 10px;
-    }
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <header>
-      <!-- Barra de navegación -->
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="fotos.html">Galería</a></li>
-          <li><a href="contato.html">Contacto</a></li> <!-- Agrega la clase "button" para crear un botón -->
-        </ul>
-      </nav>
-      <section id="contato">
-      <h1>Contato</h1>
-            </section>
-
-  </header>
-  <section>
-    <div class="card">
-      <img src="contato1.png" alt="Foto do Contato">
-      <h2>Gerardo </h2>
-      <p>Telefone: (22) 99888-3449</p>
-      <p>E-mail: bemestardojardim@gmail.com</p>
-        ----------------------------------------------------------------------------------------------------------------
-    <h2>Leticia 
-        </h2>
-      <p>Telefone: (XX) XXXX-XXXX</p>
-      <p>E-mail: bemestardojardim@gmaiil.com</p>
-    </div>
-    
-    
-  </section>
-  <footer>
-      <footer>
-  <p>Atendemos en Rio das Ostras & Buzios</p>
-</footer>
-
-    <p>&copy; 2023 Todos os direitos reservados Bem "Estar do Jardim".</p>
-  </footer>
-</body>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="fotos.html">Galeria</a></li>
+                        <li><a href="contato.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </header>
+        <section>
+            <div class="card">
+                <img src="contato1.png" alt="Foto do Contato" />
+                <h2>Gerardo</h2>
+                <p>Telefone: (22) 99888-3449</p>
+                <p>E-mail: bemestardojardim@gmail.com</p>
+            </div>
+        </section>
+        <footer></footer>
+    </body>
 </html>

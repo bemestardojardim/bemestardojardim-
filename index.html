@@ -1,193 +1,206 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
-    
-    <!-- Enlaces a fuentes externas -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous">
-      
-          <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    
-    <!-- Enlaces a archivos CSS y JavaScript -->
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/typewriter-effect@2.17.0/dist/core.js"></script>
-    <script src="main.js"></script>
-  
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>       
-      
-      
-    <title>Bem Estar do Jardim</title>
-  </head>
-  
-  <body onload="mostrarHorario()">
-      
-      
-      
-      
-      
-      
-      <!-- Barra de navegación -->
-	<div class="navbar">
-		<a class="active" href="tel:+5522998883449">Ligar</a>
-		<a href="#agendar">Agendar Horario</a>
-		<a href="https://www.google.com.br/maps/dir//Barra+de+S%C3%A3o+Jo%C3%A3o,+Casimiro+de+Abreu+-+Estado+de+R%C3%ADo+de+Janeiro,+28860-000/@-22.506812,-42.014944,19z/data=!4m9!4m8!1m0!1m5!1m1!1s0x97b2057175f5af:0x15a68f0c6048a19d!2m2!1d-41.9878239!2d-22.5742501!3e0" target="_blank">Rotas</a>
-	</div>
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
 
-      
-      
-      
-      
-      
-      
-      
-    <h1>Horario de apertura</h1>
-    <p id="horario" class="cerrado">Fechado</p>
-  
-    <header>
-      <!-- Barra de navegación -->
-    <input type="checkbox" id="btn-menu">
-        <label for="btn-menu"> <img src="icono-menu.png" alt="">
-        </label>
-        
-        <nav class="menu">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-           <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="fotos.html">Galeria</a></li>              
-        <li><a href="contato.html">Contacto</a></li>
+        <!-- Enlaces a fuentes externas -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap"
+            rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://kit.fontawesome.com/887a835504.js"
+            crossorigin="anonymous" />
 
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous" />
 
-            
-        </ul>
-        </nav>
-        
-    </header>
+        <!-- Enlaces a archivos CSS y JavaScript -->
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://unpkg.com/typewriter-effect@2.17.0/dist/core.js"></script>
+        <script src="main.js"></script>
 
-    <main>
-      <!-- Cabecera principal -->
-        
-        
-<div id="contenedor">
-		<img id="mi-imagen" src="logo.png" alt="Descripción de la imagen">
-		<div id="texto"> BEM ESTAR DO JARDIM 
-           RIO DAS OSTRAS LIMPEZA & JARDINAGEM</div>
-	</div>
-        
-        
-      <!-- Sección "Quem somos" -->
-      <section class="about-us">
-        <h2><a href="sobre-nos.html">Quem somos</a></h2>
-        <img src="somos.jpg" alt="Foto da equipe">
-        <p>Nós somos uma equipe apaixonada por jardinagem e paisagismo. Adoramos criar espaços verdes únicos e personalizados para nossos clientes e sempre nos esforçamos para superar suas expectativas!</p>
-      </section>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
 
-      <!-- Lista de servicios -->
-<h2 class="servicios-titulo">Nossos serviços</h2>
+        <title>Bem Estar do Jardim</title>
+    </head>
 
-<ul class="services-list">
-  <li>Corte e poda de grama</li>
-  <li>Irrigação e fertilização de plantas</li>
-  <li>Poda e manutenção de árvores</li>
-  <li>Design e construção de jardins</li>
-  <li>Controle de pragas e doenças</li>
-  <li>Serviço de Jardinagens</li>
-  <li>Preservação de Imóveis</li>
-  <li>Serviços Gerais - Operamos com roçadeira e motosserras</li>
-</ul>
-    
-    
-    
-     <!-- Carrusel de imágenes 
+    <body onload="mostrarHorario()">
+        <!-- Barra de navegación -->
+        <div class="navbar">
+            <a class="active" href="tel:+5522998883449">Ligar</a>
+            <a href="#agendar">Agendar Horario</a>
+            <a
+                href="https://www.google.com.br/maps/dir//Barra+de+S%C3%A3o+Jo%C3%A3o,+Casimiro+de+Abreu+-+Estado+de+R%C3%ADo+de+Janeiro,+28860-000/@-22.506812,-42.014944,19z/data=!4m9!4m8!1m0!1m5!1m1!1s0x97b2057175f5af:0x15a68f0c6048a19d!2m2!1d-41.9878239!2d-22.5742501!3e0"
+                target="_blank"
+                >Rotas</a
+            >
+        </div>
+
+        <h1>Horario de apertura</h1>
+        <p id="horario" class="cerrado">Fechado</p>
+
+        <header>
+            <!-- Barra de navegación -->
+            <input type="checkbox" id="btn-menu" />
+            <label for="btn-menu"> <img src="icono-menu.png" alt="" /> </label>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="fotos.html">Galeria</a></li>
+                    <li><a href="contato.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Cabecera principal -->
+
+            <div id="contenedor">
+                <img
+                    id="mi-imagen"
+                    src="logo.png"
+                    alt="Descripción de la imagen" />
+                <div id="texto">
+                    BEM ESTAR DO JARDIM RIO DAS OSTRAS LIMPEZA & JARDINAGEM
+                </div>
+            </div>
+
+            <!-- Sección "Quem somos" -->
+            <section class="about-us">
+                <h2><a href="sobre-nos.html">Quem somos</a></h2>
+                <img src="somos.jpg" alt="Foto da equipe" />
+                <p>
+                    Nós somos uma equipe apaixonada por jardinagem e paisagismo.
+                    Adoramos criar espaços verdes únicos e personalizados para
+                    nossos clientes e sempre nos esforçamos para superar suas
+                    expectativas!
+                </p>
+            </section>
+
+            <!-- Lista de servicios -->
+            <h2 class="servicios-titulo">Nossos serviços</h2>
+
+            <ul class="services-list">
+                <li>Corte e poda de grama</li>
+                <li>Irrigação e fertilização de plantas</li>
+                <li>Poda e manutenção de árvores</li>
+                <li>Design e construção de jardins</li>
+                <li>Controle de pragas e doenças</li>
+                <li>Serviço de Jardinagens</li>
+                <li>Preservação de Imóveis</li>
+                <li>Serviços Gerais - Operamos com roçadeira e motosserras</li>
+            </ul>
+
+            <!-- Carrusel de imágenes 
       <div class="slider-frame">
         <ul>
           <li><img src="slider1.jpg" alt=""></li>
           <li><img src="slider2.jpg" alt=""></li>
           <li><img src="slider3.jpg" alt=""></li>
           <li><img src="slider4.jpeg" alt=""></li>-->
-    <div class="contenedor-principal" style="display: flex;">
-  <!-- código uno aquí -->
-  <div style="flex-grow: 1; flex-basis: 0;">
-    <h1 class="titulo">Nossa Ubicaçao em Google Maps</h1>
-    <div id="mapa-container">
-   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d793.9805640613439!2d-42.01494399982805!3d-22.506812008834245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sbr!4v1678975086934!5m2!1ses!2sbr" width="540px" height="500px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-  </div>
-  <!-- código dos aquí -->
-  <div class="contenedor" id="agendar" style="flex-grow: 1; flex-basis: 0;">
-    <h1>vamos marcar </h1>
-    <form>
-      <label for="nombre">NOME :</label>
-      <input type="text" id="nombre" required>
+            <div class="contenedor-principal" style="display: flex">
+                <!-- código uno aquí -->
+                <div style="flex-grow: 1; flex-basis: 0">
+                    <h1 class="titulo">Nossa Ubicaçao</h1>
+                    <div id="mapa-container">
+                        <div style="padding: 20px">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d793.9805640613439!2d-42.01494399982805!3d-22.506812008834245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sbr!4v1678975086934!5m2!1ses!2sbr"
+                                width="100%"
+                                height="415px"
+                                style="border-radius:5"
+                                allowfullscreen=""
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
 
-      <label for="fecha">DATA:</label>
-      <input type="date" id="fecha" required>
+                <!-- código dos aquí        <hr size="2" color="gray" width="50%">
+ -->                                 <div> <h1 class="titulo">Vamos marcar</h1>
+                <div
+                    class="contenedor"
+                    id="agendar"
+                    style="flex-grow: 1; flex-basis: 0">
+                    
+                    <form>
+                        <label for="nombre">NOME :</label>
+                        <input type="text" id="nombre" required />
 
-      <label for="hora">Hora:</label>
-      <input type="time" id="hora" required>
+                        <label for="fecha">DATA:</label>
+                        <input type="date" id="fecha" required />
 
-      <button type="button" onclick="verificarCampos()">MARCAR AGORA</button>
+                        <label for="hora">Hora:</label>
+                        <input type="time" id="hora" required />
 
-      <a href="tel:+5522998883449" class="llamar-ahora">LIGAR</a>
-    </form>
-  </div>
-</div>
+                        <button type="button" onclick="verificarCampos()">
+                            MARCAR AGORA
+                        </button>
 
+                        <a href="tel:+5522998883449" class="llamar-ahora"
+                            >LIGAR</a
+                        >
+                    </form>
+                </div>
+            </div>
+                </div>
 
-        
-        
-     
-        
-        
-        
-        
-        
-<div class="contacto-caja">
-  <h2>Contato</h2>
-  <button class="boton-telefono" href="tel:+22998883449">
-    <i class="fa fa-phone"></i> Llamar ahora
-  </button>
-  <p>(22) 9988-83449</p>
-</div>
+            <div class="contacto-caja">
+                <h2>Contato</h2>
+                <button class="boton-telefono" href="tel:+22998883449">
+                    <i class="fa fa-phone"></i> Ligar
+                </button>
+                <p>(22) 9988-83449</p>
+            </div>
 
-<div class="endereco-caja">
-  <h2>Endereço</h2>
-  <button id="ver-rutas-btn">VER RUTAS</button>
-  <p>Rua Antonio Custodio</p>
-  <p>Estrada Vila Verde km5  </p>
-  <p>Casimiro de Abreu - RJ</p>
-  <p>28860-000</p>
-  <p>Brasil</p>
-</div>
+            <div class="endereco-caja">
+                <h2>Endereço</h2>
+                <button id="ver-rutas-btn">ROTAS</button>
+                <p>Rua Antonio Custodio</p>
+                <p>Estrada Vila Verde km5</p>
+                <p>Casimiro de Abreu - RJ</p>
+                <p>28860-000</p>
+                <p>Brasil</p>
+            </div>
 
-<div class="horario-caja">
-  <h2>Horário de funcionamento</h2>
-  <ul>
-    <li>seg.: 07:00 – 17:45</li>
-    <li>ter.: 07:00 – 17:00</li>
-    <li>qua.: 07:00 – 17:00</li>
-    <li>qui.: 07:00 – 17:00</li>
-    <li>sex.: 07:00 – 13:00</li>
-    <li>sáb.: Fechado</li>
-    <li>dom.: 07:00 – 17:00</li>
-  </ul>
-</div>
-
-
-        
-        
-        
-    
-
-    </main >
-    <footer>
-      <p>Contate-nos pelo WhatsApp: <a href="https://wa.me/5522998883449">+55 22 99888-3449</a></p>
-      <p>Envie-nos um e-mail: <a href="mailto:bemestardojardim@gmail.com">bemestardojardim@gmail.com</a></p>
-    </footer>
-</body>
+            <div class="horario-caja">
+                <h2>Horário de funcionamento</h2>
+                <ul>
+                    <li>seg.: 07:00 – 17:45</li>
+                    <li>ter.: 07:00 – 17:00</li>
+                    <li>qua.: 07:00 – 17:00</li>
+                    <li>qui.: 07:00 – 17:00</li>
+                    <li>sex.: 07:00 – 13:00</li>
+                    <li>sáb.: Fechado</li>
+                    <li>dom.: 07:00 – 17:00</li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <p>
+                Contate-nos pelo WhatsApp:
+                <a href="https://wa.me/5522998883449">+55 22 99888-3449</a>
+            </p>
+            <p>
+                Envie-nos um e-mail:
+                <a href="mailto:bemestardojardim@gmail.com"
+                    >bemestardojardim@gmail.com</a
+                >
+            </p>
+        </footer>
+    </body>
 </html>
