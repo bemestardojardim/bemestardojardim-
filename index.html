@@ -41,7 +41,7 @@
         <!-- Barra de navegación -->
         <div class="navbar">
             <a class="active" href="tel:+5522998883449">Ligar</a>
-            <a href="#agendar">Agendar Horario</a>
+            <a href="#marcar">Agendar Horario</a>
             <a
                 href="https://www.google.com.br/maps/dir//Barra+de+S%C3%A3o+Jo%C3%A3o,+Casimiro+de+Abreu+-+Estado+de+R%C3%ADo+de+Janeiro,+28860-000/@-22.506812,-42.014944,19z/data=!4m9!4m8!1m0!1m5!1m1!1s0x97b2057175f5af:0x15a68f0c6048a19d!2m2!1d-41.9878239!2d-22.5742501!3e0"
                 target="_blank"
@@ -123,7 +123,7 @@
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d793.9805640613439!2d-42.01494399982805!3d-22.506812008834245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sbr!4v1678975086934!5m2!1ses!2sbr"
                                 width="100%"
                                 height="415px"
-                                style="border-radius:5"
+                                style="border-radius: 5"
                                 allowfullscreen=""
                                 loading="lazy"></iframe>
                         </div>
@@ -131,33 +131,38 @@
                 </div>
 
                 <!-- código dos aquí        <hr size="2" color="gray" width="50%">
- -->                                 <div> <h1 class="titulo">Vamos marcar</h1>
-                <div
-                    class="contenedor"
-                    id="agendar"
-                    style="flex-grow: 1; flex-basis: 0">
-                    
-                    <form>
-                        <label for="nombre">NOME :</label>
-                        <input type="text" id="nombre" required />
+ -->
+                                     <div id="marcar">
 
-                        <label for="fecha">DATA:</label>
-                        <input type="date" id="fecha" required />
+                <div>
+                   
+                    <h1 class="titulo">Vamos marcar</h1>
+                </div>
+                    <div
+                        class="contenedor"
+                        id="agendar"
+                        style="flex-grow: 1; flex-basis: 0">
+                        <form>
+                            <label for="nombre">NOME :</label>
+                            <input type="text" id="nombre" required />
 
-                        <label for="hora">Hora:</label>
-                        <input type="time" id="hora" required />
+                            <label for="fecha">DATA:</label>
+                            <input type="date" id="fecha" required />
 
-                        <button type="button" onclick="verificarCampos()">
-                            MARCAR AGORA
-                        </button>
+                            <label for="hora">Hora:</label>
+                            <input type="time" id="hora" required />
 
-                        <a href="tel:+5522998883449" class="llamar-ahora"
-                            >LIGAR</a
-                        >
-                    </form>
+                            <button type="button" onclick="verificarCampos()">
+                                MARCAR AGORA
+                            </button>
+
+                            <a href="tel:+5522998883449" class="llamar-ahora"
+                                >LIGAR</a
+                            >
+                        </form>
+                    </div>
                 </div>
             </div>
-                </div>
 
             <div class="contacto-caja">
                 <h2>Contato</h2>
