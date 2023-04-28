@@ -1,235 +1,427 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="Oferecemos serviços de jardinagem e paisagismo em Rio das Ostras, incluindo manutenção de jardins, cuidados com plantas, irrigação e adubação. Temos experiência com plantas ornamentais, gramado e flores, proporcionando bem estar do jardim aos nossos clientes. Contrate nossos jardineiros em Rio das Ostras para cuidar do seu jardim vertical e melhorar o paisagismo da sua casa ou empresa.">
-        
-        <meta name="keywords" content=" #plants
-plantas, garden, nature, green, flowers, plantsofinstagram, gardenlife, urbanjungle, succulentsjardinagem, paisagismo, plantas ornamentais, cuidados com o jardim, dicas de jardinagem, projetos de paisagismo, flores e plantas, manutenção de jardins, decoração de jardins, como cultivar plantas, Rio das Ostras, Macaé, Búzios">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Organización de evento hora por hora</title>
 
+        <link rel="stylesheet" type="text/css" href="styles.css" />
 
-        <meta
-            name="viewport"
-            content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-
-        <!-- Enlaces a fuentes externas -->
         <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
             rel="stylesheet" />
         <link
-            rel="stylesheet"
-            href="https://kit.fontawesome.com/887a835504.js"
-            crossorigin="anonymous" />
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+            rel="stylesheet" />
+    <script src="html2pdf.bundle.min.js"></script>
 
-        <link
-            rel="stylesheet"
-            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-            crossorigin="anonymous" />
-
-        <!-- Enlaces a archivos CSS y JavaScript -->
-        <link rel="stylesheet" href="style.css" />
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://unpkg.com/typewriter-effect@2.17.0/dist/core.js"></script>
-        <script src="main.js"></script>
-
-        <script
-            src="https://code.jquery.com/jquery-3.6.0.js"
-            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-            crossorigin="anonymous"></script>
-
-        <title>Bemestar do Jardim - Cuidado y diseño de jardines en Rio das Ostras, Buzios y Macae</title>
+        <script src="script.js"></script>
     </head>
+    <body>
 
-    <body onload="mostrarHorario()">
-        <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v16.0" nonce="t7zM8iLE"></script>
-        <!-- Barra de navegación -->
-        <div class="navbar">
-            <a class="active" href="tel:+5522998883449">Ligar</a>
-            <a href="#marcar">Agendar Horario</a>
-            <a
-                href=""
-                target="_blank"
-                >Rotas</a
-            >
-        </div>
+        <h1>Programa do culto sabatico para o Sonoplasta</h1>
+    
+        <p>
+           <b> Sábado 29 de Abril 2023</b>
+        </p>
+        <section id="seccion-1">
 
-        <h1>Horario de apertura</h1>
-        <p id="horario" class="cerrado">Fechado</p>
+        <ol>
+       <li onclick="document.getElementById('item-1').checked = true;">
+   
+ <a href="https://bemestardojardim.github.io/IASD-VILA-VERDE/fondo.html" target="_blank" class="hora-button">
+    <input type="checkbox" id="item-1" name="item" value="valor del item">
+    <b>Musica de fundo:</b>      instrumental
+</a>
 
-        <header>
-            <!-- Barra de navegación -->
-            <input type="checkbox" id="btn-menu" />
-            <label for="btn-menu"> <img src="icono-menu.png" alt="Icono de menú para Flores e plantas em Rio das Ostras, Serviços de manutenção de jardins em Macaé y Decoração de jardins em Búzios" /> </label>
+</li>
 
-            <nav class="menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="fotos.html">Galeria</a></li>
-                    <li><a href="contato.html">Contacto</a></li>
-                  <li><a href="blog2.html">Dicas</a></li>
 
-                </ul>
-            </nav>
-        </header>
+       <li onclick="document.getElementById('item-2').checked = true;">
 
-        <main>
-            <!-- Cabecera principal -->
+    
+         <a onclick="toggleLista()" class="hora-button">    <input type="checkbox" id="item-2" name="item" value="valor del item" class="checkbox-nocturno">
 
-            <div id="contenedor">
-                <img
-                    id="mi-imagen"
-                    src="logo.png"
-                    alt="- Icono de empresa de plantas ornamentais y flores en el área de Río das Ostras, Macaé y Búzios
-" />
-                <div id="texto">
-                    BEM ESTAR DO JARDIM RIO DAS OSTRAS LIMPEZA & JARDINAGEM
-                </div>
-            </div>
+    <b>Louvor:</b> (Perguntar)
+  </a>
+    <div id="lista" style="display: none">
+        <H1>OPCÕES</H1>
+       
+ <a                    href="https://bemestardojardim.github.io/IASD-VILA-VERDE/louvor1.html"
+                    target="_blank"
+                    class="hora-butto"
+                    > Jesus Venceu </a >
+         <a                    href="https://bemestardojardim.github.io/IASD-VILA-VERDE/louvor2.html"
+                    target="_blank"
+                    class="hora-butto"
+                    > Tomou Meu Lugar </a >
 
-            <!-- Sección "Quem somos" -->
-            <section class="about-us">
-                <h2><a href="sobre-nos.html">Quem somos</a></h2>
-                <img src="somos.jpg" alt="- Fotografía de nuestro equipo de expertos en cuidado de plantas ornamentais y flores en la región
-" />
-                <p>
-                    Nós somos uma equipe apaixonada por jardinagem e paisagismo.
-                    Adoramos criar espaços verdes únicos e personalizados para
-                    nossos clientes e sempre nos esforçamos para superar suas
-                    expectativas!
-                </p>
-            </section>
+         <a                    href="https://bemestardojardim.github.io/IASD-VILA-VERDE/louvor3.html"
+                    target="_blank"
+                    class="hora-butto"
+                    > inexplicavel </a >
+ 
+    </div>
+</li>
+<li onclick="document.getElementById('item-8').checked = true;">
+    
 
-            <!-- Lista de servicios -->
-            <h2 class="servicios-titulo">Nossos serviços</h2>
+    <a onclick="toggleLista()" class="hora-button"> <input type="checkbox" id="item-8" name="item" value="valor del item">
+     <b>Verso Biblico: </b>
+  </a>
+            </li>
 
-            <ul class="services-list">
-                <li>Corte e poda de grama</li>
-                <li>Irrigação e fertilização de plantas</li>
-                <li>Poda e manutenção de árvores</li>
-                <li>Design e construção de jardins</li>
-                <li>Controle de pragas e doenças</li>
-                <li>Serviço de Jardinagens</li>
-                <li>Preservação de Imóveis</li>
-                <li>Serviços Gerais - Operamos com roçadeira e motosserras</li>
-            </ul>
 
-            <!-- Carrusel de imágenes 
-      <div class="slider-frame">
-        <ul>
-          <li><img src="slider1.jpg" alt=""></li>
-          <li><img src="slider2.jpg" alt=""></li>
-          <li><img src="slider3.jpg" alt=""></li>
-          <li><img src="slider4.jpeg" alt=""></li>-->
-            <div class="contenedor-principal" style="display: flex">
-               
+       <li onclick="document.getElementById('item-3').checked = true;">
 
-                <!-- código dos aquí        <hr size="2" color="gray" width="50%">
- -->
-                                     <div id="marcar">
+    <a href="https://bemestardojardim.github.io/IASD-VILA-VERDE/informativo.html" target="_blank" class="hora-button">    <input type="checkbox" id="item-3" name="item" value="valor del item">
+       <b> Informativo mundial:</b> 29 de Abril 2023
+    </a>
+</li>
 
-                <div>
-                   
-                    <h1 class="titulo">Vamos marcar</h1>
-                </div>
+
+
+
+  <li onclick="document.getElementById('item-8').checked = true;">
+    
+
+    <a onclick="toggleLista()" class="hora-button"> <input type="checkbox" id="item-8" name="item" value="valor del item">
+     <b>Mensajem: </b>Zilma
+  </a>
+            </li>
+
+              <li onclick="document.getElementById('item-84').checked = true;">
+    
+
+    <a onclick="toggleLista()" class="hora-button"> <input type="checkbox" id="item-84" name="item" value="valor del item">
+     <b> Oração: </b>
+  </a>
+            </li>
+
+
+
+       <li onclick="document.getElementById('item-5').checked = true;">
+   
+                <a
+                    href="https://bemestardojardim.github.io/IASD-VILA-VERDE/inicioes.html"
+                    target="_blank"
+                    class="hora-button"
+                    > <input type="checkbox" id="item-5" name="item" value="valor del item"><b>9:00-10:10:</b> Escola Sabatina</a
+                >
+            </li>
+            
+       <li onclick="document.getElementById('item-6').checked = true;">
+   
+                <a
+                    href="https://bemestardojardim.github.io/IASD-VILA-VERDE/umahora.html"
+                    target="_blank"
+                    class="hora-button"> <input type="checkbox" id="item-6" name="item" value="valor del item">
+                    <b>Contagem regressiva uma hora:</b> | clik Aqui</a
+                >
+            </li>
+       <li onclick="document.getElementById('item-44').checked = true;">
+    
+                <a
+                    href="https://bemestardojardim.github.io/IASD-VILA-VERDE/fines.html"
+                    target="_blank"
+                    class="hora-button"
+                    > <input type="checkbox" id="item-44" name="item" value="valor del item"> <b>10:05:   Vinheta :</b> 5 minutos para Finalizar ES</a
+                >
+            </li>
+            
+            
+            
+             <li onclick="document.getElementById('item-33').checked = true;">
+    
+
+    <a onclick="toggleLista()" class="hora-button"> <input type="checkbox" id="item-33" name="item" value="valor del item">
+     <b>Mensajem: </b>Zilma
+  </a>
+            </li>
+                <li onclick="document.getElementById('item-7').checked = true;">
+    
+                <a
+                    
+                    class="hora-button"
+                    > <input type="checkbox" id="item-7" name="item" value="valor del item"> <b> Louvor especial ou Hino final: </b>_________
+                    <br>________________________________________</a
+                >
+            </li>
+            
+            
+
+       <li onclick="document.getElementById('item-88').checked = true;">
+    
+
+    <a onclick="toggleLista()" class="hora-button"> <input type="checkbox" id="item-88" name="item" value="valor del item">
+     <b>10:16: Oracao Final</b>____________________
+  </a>
+            </li>  <li onclick="document.getElementById('item-9').checked = true;">
+    
+                <a
+                    href="https://bemestardojardim.github.io/IASD-VILA-VERDE/anuncios.html"
+                    target="_blank"
+                    class="hora-button"
+                    >   <input type="checkbox" id="item-9" name="item" value="valor del item"> <b>Anuncios</b>_____________________________    </a
+                >
+            </li>
+            <h1>DOXOLOGIA</h1>
+
+     
+       <li onclick="document.getElementById('item-10').checked = true;">
+    
+                <a
+                    href="https://bemestardojardim.github.io/IASD-VILA-VERDE/entrada.html"
+                    target="_blank"
+                    class="hora-button"><input type="checkbox" id="item-10" name="item" value="valor del item">
+                    <b>Entrada a Plataforma:</b>  Hino 21 </a
+                >
+            </li>
+                   <li onclick="document.getElementById('item-11').checked = true;">
+
+                <a class="hora-button" onclick="accion11()">    <input type="checkbox" id="item-11" name="item" value="valor del item">
+                    <b>Oraçao:</b>______________ 
+                </a>
+            </li>
+
+       <li onclick="document.getElementById('item-12').checked = true;">
+    
+                <a
+                    href="https://bemestardojardim.github.io/IASD-VILA-VERDE/provadevede.html"
+                    target="_blank"
+                    class="hora-button"
+                    ><input type="checkbox" id="item-12" name="item" value="valor del item"><b>Provade e Vede:</b> 29 de Abril 2023</a
+                >
+            </li>
+       <li onclick="document.getElementById('item-13').checked = true;">
+    
+                <a
+                    href="https://bemestardojardim.github.io/IASD-VILA-VERDE/ofertorio.html"
+                    target="_blank"
+                    class="hora-button"
+                    ><input type="checkbox" id="item-13" name="item" value="valor del item"><b>Diaconos Recolhem as Oferendas:</b>  Hino 572 </a
+                >
+            </li>
+       <li onclick="document.getElementById('item-14').checked = true;">
+   
+                <a class="hora-button" onclick="accion11()"> <input type="checkbox" id="item-14" name="item" value="valor del item">
+                  <b> Momento de Louvor (Perguntar)</b>___________<br>_________________________________________<br>
+ </a>
+                <div id="cajas" style="display: none">
                     <div
-                        class="contenedor"
-                        id="agendar"
-                        style="flex-grow: 1; flex-basis: 0">
-                        <form>
-                            <label for="nombre">NOME :</label>
-                            <input type="text" id="nombre" required />
-
-                            <label for="fecha">DATA:</label>
-                            <input type="date" id="fecha" required />
-
-                            <label for="hora">Hora:</label>
-                            <input type="time" id="hora" required />
-
-                            <button type="button" onclick="verificarCampos()">
-                                MARCAR AGORA
-                            </button>
-
-                            <a href="tel:+5522998883449" class="llamar-ahora"
-                                >LIGAR</a
-                            >
-                        </form>
+                        style="
+                            display: inline-block;
+                            width: 33%;
+                            text-align: center;
+                        ">
+                        Texto 1
+                    </div>
+                    <div
+                        style="
+                            display: inline-block;
+                            width: 33%;
+                            text-align: center;
+                        ">
+                        Texto 2
+                    </div>
+                    <div
+                        style="
+                            display: inline-block;
+                            width: 33%;
+                            text-align: center;
+                        ">
+                        Texto 3
                     </div>
                 </div>
-            </div>
+            </li>
 
-            <div class="contacto-caja">
-                <h2>Contato</h2>
-                <button class="boton-telefono" href="tel:+22998883449">
-                    <i class="fa fa-phone"></i> Ligar
-                </button>
-                <p>(22) 9988-83449</p>
-            </div>
-
-            <div class="endereco-caja">
-                <h2>Endereço</h2>
-                <button id="ver-rutas-btn">ROTAS</button>
-                <p>Rua Antonio Custodio</p>
-                <p>Estrada Vila Verde km5</p>
-                <p>Casimiro de Abreu - RJ</p>
-                <p>28860-000</p>
-                <p>Brasil</p>
-            </div>
-
-            <div class="horario-caja">
-                <h2>Horário de funcionamento</h2>
-                <ul>
-                    <li>seg.: 07:00 – 17:45</li>
-                    <li>ter.: 07:00 – 17:00</li>
-                    <li>qua.: 07:00 – 17:00</li>
-                    <li>qui.: 07:00 – 17:00</li>
-                    <li>sex.: 07:00 – 13:00</li>
-                    <li>sáb.: Fechado</li>
-                    <li>dom.: 07:00 – 17:00</li>
-                </ul>
-            </div>
-                  
-             <div class="gallery">
-            <div class="img"><a>Antes</a>
-                <img class="img" src="antes.jpg" alt="Serviço 1" />
-            </div>
-            <div class="img"><a> Depois</a>
-                <img class="img" src="depois.jpg" alt="Serviço 2" />
-            </div>
-            <div class="img"><a>Antes</a>
-                <img class="img" src="antes1.jpg" alt="Serviço 3" />
-            </div>
-            <div class="img"><a> Depois</a>
-                <img class="img" src="depois1.jpg" alt="Serviço 4" />
-            </div>
-            
-        
-        </main>
-          <div class="fb-comments" data-href="https://bemestardojardim.github.io/bemestardojardim-/index.html" data-width="100%" data-numposts="5"></div>
+       <li onclick="document.getElementById('item-21').checked = true;">
+    
+                <a class="hora-button" href="https://bemestardojardim.github.io/IASD-VILA-VERDE/hinoinicial.html" onclick="accion11()"                     target="_blank"
+ ><input type="checkbox" id="item-21" name="item" value="valor del item">
+                  <b>  Hino inicial-Escolha do Pregador :</b> (128 NH)
+                </a>
+            </li>
+       <li onclick="document.getElementById('item-22').checked = true;">
+  
+                <a class="hora-button" onclick="accion11()">  <input type="checkbox" id="item-22" name="item" value="valor del item">
+                    <b>Horaçao de Joelhos:</b>(PERGUNTAR)
+                </a>
+            </li>
+       <li onclick="document.getElementById('item-23').checked = true;">
+    
+                <a class="hora-button" onclick="accion11()"><input type="checkbox" id="item-23" name="item" value="valor del item">
+                    <b>Adoraçao infantil:</b> NÃO HA  
+                </a>
+            </li>
+       <li onclick="document.getElementById('item-24').checked = true;">
+   
+                <a class="hora-button" onclick="accion11()"> <input type="checkbox" id="item-24" name="item" value="valor del item">
+                   <b> Musica especial 
+</b>  (PERGUNTAR)  </a>  _________________________________________
+<br>    <br>_________________________________________
           
-        <footer>
-            <p>
-                Contate-nos pelo WhatsApp:
-                <a href="https://wa.me/5522998883449">+55 22 99888-3449</a>
-            </p>
-            <p>
-                Envie-nos um e-mail:
-                <a href="mailto:bemestardojardim@gmail.com"
-                    >bemestardojardim@gmail.com</a
-                >
-            </p>
-            <a>s</a>
-                        <a>s</a>
-                        <a>s</a>
-<a>s</a>
-            <a>s</a>
-            <a>s</a>
-            <a>s</a>
+            </li>
+       <li onclick="document.getElementById('item-25').checked = true;">
+   
+                <a class="hora-button" onclick="accion11()"> <input type="checkbox" id="item-25" name="item" value="valor del item"><b>Sermao: </b> Alessandro Cardoso </a> <b> Titulo: </b> O que fazer com JESUS? <br>
+                _______________________<br>
+                <b>Material link: </b> <a href="https://youtube.com/watch?v=WEn9PBlOFDY&feature=share">YouTube Missão Arpa- NOSSA ESPERANÇA </a>
+                <br> ____________________<br>
+                <b>Letra:</b><br>
+So one of these nights and about twelve o′clock
+Este velho mundo vai cambalear e balançar
+Santos vão tremer e chorar por par
+For the lord′s gonna come in his heavenly airplain<br><br>
 
+Yeah, yeah, yeah, yeah, yeah<br><br>
+
+Se Deus tivesse um nome, qual seria?
+E você o diria diante dele
+Se estivesse cara a cara com Ele em toda a sua glória?
+O que você perguntaria, se pudesse fazer só uma pergunta?<br><br>
+
+E sim, sim, Deus é maravilhoso
+Sim, sim, Deus é bom
+Yeah, yeah, yeah, yeah, yeah<br><br>
+
+E se Deus fosse um de nós?
+Apenas um desajeitado como um de nós
+Apenas um estranho no ônibus
+Tentando fazer o seu caminho de casa<br><br>
+
+Se Deus tivesse um rosto, como ele seria?
+E você ia querer ver
+Se ver significasse que você teria que crer
+Em coisas como o Céu, Jesus e os santos
+E todos os profetas?<br><br>
+
+E sim, sim, Deus é maravilhoso
+Sim, sim, Deus é bom
+Yeah, yeah, yeah, yeah, yeah<br><br>
+
+E se Deus fosse um de nós?
+Apenas um desajeitado como um de nós
+Apenas um estranho no ônibus
+Tentando fazer o seu caminho de casa<br>_____________________________
+                
+            </li>
+       <li  onclick="document.getElementById('item-26').checked = true;">
+
+                <a class="hora-button" href="https://bemestardojardim.github.io/IASD-VILA-VERDE/hinofinal.html" onclick="accion11()">    <input type="checkbox" id="item-26" name="item" value="valor del item">
+                   <b> Hino Final:</b>   (492 Lar Feliz)
+                </a>
+            </li>
+       <li  onclick="document.getElementById('item-27').checked = true;">
+
+                <a class="hora-button" href="https://bemestardojardim.github.io/IASD-VILA-VERDE/salida.html" onclick="accion11()">    <input type="checkbox" id="item-27" name="item" value="valor del item">
+                   <b> Salida</b>   Nos braços de Jesus
+                </a>
+            </li>
+                    </ol>
+                            </section>
+
+        
+        <section id="seccion-2">
             
-        </footer>
+        <ol>
+
+            <h1>Utilidades</h1>
+              
+
+       <li onclick="document.getElementById('item-48').checked = true;">
+   
+                <a
+                    href="https://rdrop.link/"
+                    target="_blank"
+                    class="hora-button"
+                    > <input type="checkbox" id="item-48" name="item" value="valor del item">Transferir arquivos pro computador | clik Aqui</a
+                >
+            </li>
+            
+                           
+            
+       <li onclick="document.getElementById('item-47').checked = true;">
+   
+                <a
+                    href="https://bemestardojardim.github.io/IASD-VILA-VERDE/domingo.html"
+                    target="_blank"
+                    class="hora-button"
+                    > <input type="checkbox" id="item-47" name="item" value="valor del item">Domingo | clik Aqui</a
+                >
+            </li>
+            
+                <li onclick="document.getElementById('item-46').checked = true;">
+   
+                <a
+                    href="https://bemestardojardim.github.io/IASD-VILA-VERDE/quarta.html"
+                    target="_blank"
+                    class="hora-button"
+                    > <input type="checkbox" id="item-46" name="item" value="valor del item"> Quarta | clik Aqui</a
+                >
+            </li>
+            <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertir HTML a PDF</title>
+    <!-- El script de la librería-->
+    <script src="html2pdf.bundle.min.js"></script>
+    <!--Nuestro script, que se encarga de crear el PDF usando la librería-->
+    <script src="script.js"></script>
+    <!-- Algunos estilos -->
+
+     <li onclick="document.getElementById('item-45').checked = true;">
+    
+                <a
+                    id="btnCrearPdf"
+                    class="hora-button"
+                    ><input type="checkbox" id="item-45" name="item" value="valor del item"> Baixar o Programa | pdf
+                </a>
+            </li>
+               
+            <button id="boton-secreto"
+                    onclick="window.location.href='https://www.aconvert.com/es/document/html-to-txt/'"                     target="_blank"
+ >convertir a texto</button>
+
+
+
+         
+            
+
+
+
+        </ol>
+                </section>
+   
+
     </body>
+    
+    <footer>
+        
+    
+        <h4>
+            Este conteúdo é exclusivo para administradores e contém ferramentas
+            e utilidades para a gestão da plataforma. Dessa forma, podemos realizar as tarefas de administração de forma
+            eficiente e eficaz.
+        </h4>
+        <a href="https://chat.whatsapp.com/BUZ7MJ1Ouv8CCErltXgZ2t" target="_blank" class="whatsapp-button">Entrar ao grupo de WhatsApp</a>
+
+<style>
+    .whatsapp-button {
+        background-color: #25D366;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        display: block;
+    margin: 0 auto;
+        
+    }
+</style>
+
+</footer>
+
+   
 </html>
