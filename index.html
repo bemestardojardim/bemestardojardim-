@@ -1,244 +1,885 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="Oferecemos serviços de jardinagem e paisagismo em Rio das Ostras, incluindo manutenção de jardins, cuidados com plantas, irrigação e adubação. Temos experiência com plantas ornamentais, gramado e flores, proporcionando bem estar do jardim aos nossos clientes. Contrate nossos jardineiros em Rio das Ostras para cuidar do seu jardim vertical e melhorar o paisagismo da sua casa ou empresa.">
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem Estar do Jardim - Jardinagem e Paisagismo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Reset y variables */
+        :root {
+            --primary: #2e7d32;
+            --primary-dark: #1b5e20;
+            --primary-light: #4caf50;
+            --secondary: #ff9800;
+            --text: #333;
+            --text-light: #666;
+            --background: #f9f9f9;
+            --white: #ffffff;
+            --gray: #f5f5f5;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
         
-        <meta name="keywords" content=" #plants
-plantas, garden, nature, green, flowers, plantsofinstagram, gardenlife, urbanjungle, succulentsjardinagem, paisagismo, plantas ornamentais, cuidados com o jardim, dicas de jardinagem, projetos de paisagismo, flores e plantas, manutenção de jardins, decoração de jardins, como cultivar plantas, Rio das Ostras, Macaé, Búzios">
-
-
-        <meta
-            name="viewport"
-            content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-
-        <!-- Enlaces a fuentes externas -->
-        <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap"
-            rel="stylesheet" />
-        <link
-            rel="stylesheet"
-            href="https://kit.fontawesome.com/887a835504.js"
-            crossorigin="anonymous" />
-
-        <link
-            rel="stylesheet"
-            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-            crossorigin="anonymous" />
-
-        <!-- Enlaces a archivos CSS y JavaScript -->
-        <link rel="stylesheet" href="style.css" />
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://unpkg.com/typewriter-effect@2.17.0/dist/core.js"></script>
-        <script src="main.js"></script>
-
-        <script
-            src="https://code.jquery.com/jquery-3.6.0.js"
-            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-            crossorigin="anonymous"></script>
-
-        <title>Bemestar do Jardim - Cuidado y diseño de jardines en Rio das Ostras, Buzios y Macae</title>
-    </head>
-
-    <body onload="mostrarHorario()">
-        <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v16.0" nonce="t7zM8iLE"></script>
-        <!-- Barra de navegación -->
-        <div class="navbar">
-            <a class="active" href="tel:+5522998883449">Ligar</a>
-            <a href="#marcar">Agendar Horario</a>
-            <a
-                href=""
-                target="_blank"
-                >Rotas</a
-            >
-        </div>
-
-        <h1>Horario de apertura</h1>
-        <p id="horario" class="cerrado">Fechado</p>
-
-        <header>
-            <!-- Barra de navegación -->
-            <input type="checkbox" id="btn-menu" />
-            <label for="btn-menu"> <img src="icono-menu.png" alt="Icono de menú para Flores e plantas em Rio das Ostras, Serviços de manutenção de jardins em Macaé y Decoração de jardins em Búzios" /> </label>
-
-            <nav class="menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="fotos.html">Galeria</a></li>
-                    <li><a href="contato.html">Contacto</a></li>
-                  <li><a href="blog2.html">Dicas</a></li>
-
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <!-- Cabecera principal -->
-
-            <div id="contenedor">
-                <img
-                    id="mi-imagen"
-                    src="logo.png"
-                    alt="- Icono de empresa de plantas ornamentais y flores en el área de Río das Ostras, Macaé y Búzios
-" />
-                <div id="texto">
-                    BEM ESTAR DO JARDIM RIO DAS OSTRAS LIMPEZA & JARDINAGEM
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--background);
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--primary);
+            color: var(--white);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background-color: var(--secondary);
+        }
+        
+        .btn-secondary:hover {
+            background-color: #e68900;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary);
+            margin: 15px auto;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 60px;
+            margin-right: 15px;
+        }
+        
+        .logo-text h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0;
+        }
+        
+        .logo-text p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 0;
+        }
+        
+        .nav-menu {
+            display: flex;
+        }
+        
+        .nav-menu li {
+            margin-left: 25px;
+        }
+        
+        .nav-menu a {
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        .nav-menu a:hover {
+            color: var(--primary);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://media.gettyimages.com/id/1415744326/pt/vetorial/abstract-blurred-background-defocused-green-gradient.jpg?s=2048x2048&w=gi&k=20&c=QDB1srjnQGQhswUFkgoUto7HB_ctpFB2_XiVJiVEOfI=');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            text-align: center;
+            padding: 180px 0 100px;
+            margin-top: 80px;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        /* About Section */
+        .about {
+            background-color: var(--white);
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-text h2 {
+            margin-bottom: 20px;
+        }
+        
+        /* Services Section */
+        .services {
+            background-color: var(--gray);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            margin-bottom: 15px;
+        }
+        
+        /* Gallery Section */
+        .gallery {
+            background-color: var(--white);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 250px;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-label {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        /* Booking Section */
+        .booking {
+            background: linear-gradient(rgba(46, 125, 50, 0.9), rgba(46, 125, 50, 0.9)), url('https://media.gettyimages.com/id/1415744326/pt/vetorial/abstract-blurred-background-defocused-green-gradient.jpg?s=2048x2048&w=gi&k=20&c=QDB1srjnQGQhswUFkgoUto7HB_ctpFB2_XiVJiVEOfI=');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .booking h2 {
+            color: var(--white);
+        }
+        
+        .booking-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text);
+            font-weight: 600;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .booking-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background-color: var(--gray);
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .contact-card {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        
+        .contact-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .contact-card h3 {
+            margin-bottom: 15px;
+        }
+        
+        .contact-card ul {
+            text-align: left;
+        }
+        
+        .contact-card li {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .day {
+            font-weight: 600;
+        }
+        
+        .time {
+            color: var(--text-light);
+        }
+        
+        .closed {
+            color: #f44336;
+        }
+        
+        /* Horario Section */
+        .horario-section {
+            background-color: var(--white);
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        .horario-section h2 {
+            margin-bottom: 10px;
+        }
+        
+        #horario {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .abierto {
+            color: var(--primary);
+        }
+        
+        .cerrado {
+            color: #f44336;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary-dark);
+            color: var(--white);
+            padding: 50px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .footer-column h3:after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 2px;
+            background-color: var(--secondary);
+            margin-top: 8px;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column a:hover {
+            color: var(--secondary);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                background-color: var(--white);
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+                transition: left 0.3s;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .nav-menu li {
+                margin: 10px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .booking-buttons {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            section {
+                padding: 60px 0;
+            }
+            
+            .hero {
+                padding: 150px 0 80px;
+            }
+            
+            .logo-text h1 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="logo.png" alt="Bem Estar do Jardim">
+                <div class="logo-text">
+                    <h1>BEM ESTAR DO JARDIM</h1>
+                    <p>Rio das Ostras Limpeza & Jardinagem</p>
                 </div>
             </div>
-
-            <!-- Sección "Quem somos" -->
-            <section class="about-us">
-                <h2><a href="sobre-nos.html">Quem somos</a></h2>
-                <img src="somos.jpg" alt="- Fotografía de nuestro equipo de expertos en cuidado de plantas ornamentais y flores en la región
-" />
-                <p>
-                    Nós somos uma equipe apaixonada por jardinagem e paisagismo.
-                    Adoramos criar espaços verdes únicos e personalizados para
-                    nossos clientes e sempre nos esforçamos para superar suas
-                    expectativas!
-                </p>
-            </section>
-
-            <!-- Lista de servicios -->
-            <h2 class="servicios-titulo">Nossos serviços</h2>
-
-            <ul class="services-list">
-                <li>Corte e poda de grama</li>
-                <li>Irrigação e fertilização de plantas</li>
-                <li>Poda e manutenção de árvores</li>
-                <li>Design e construção de jardins</li>
-                <li>Controle de pragas e doenças</li>
-                <li>Serviço de Jardinagens</li>
-                <li>Preservação de Imóveis</li>
-                <li>Serviços Gerais - Operamos com roçadeira e motosserras</li>
+            
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
+        </div>
+    </header>
 
-            <!-- Carrusel de imágenes 
-      <div class="slider-frame">
-        <ul>
-          <li><img src="slider1.jpg" alt=""></li>
-          <li><img src="slider2.jpg" alt=""></li>
-          <li><img src="slider3.jpg" alt=""></li>
-          <li><img src="slider4.jpeg" alt=""></li>-->
-            <div class="contenedor-principal" style="display: flex">
-               
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <h1>Transformamos seu jardim em um paraíso</h1>
+            <p>Oferecemos serviços de jardinagem e paisagismo em Rio das Ostras, Macaé e Búzios. Cuidamos do seu jardim com paixão e expertise.</p>
+            <div class="hero-buttons">
+                <a href="#agendar" class="btn">Agendar Horário</a>
+                <a href="tel:+5522998883449" class="btn btn-secondary">Ligar Agora</a>
+            </div>
+        </div>
+    </section>
 
-                <!-- código dos aquí        <hr size="2" color="gray" width="50%">
- -->
-                                     <div id="marcar">
+    <!-- Horario Section -->
+    <section class="horario-section">
+        <div class="container">
+            <h2>Horário de Abertura</h2>
+            <p id="horario" class="cerrado">Fechado</p>
+        </div>
+    </section>
 
-                <div>
-                   
-                    <h1 class="titulo">Vamos marcar</h1>
+    <!-- About Section -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <h2 class="section-title">Quem Somos</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="somos.jpg" alt="Nossa equipe">
                 </div>
-                    <div
-                        class="contenedor"
-                        id="agendar"
-                        style="flex-grow: 1; flex-basis: 0">
-                        <form>
-                            <label for="nombre">NOME :</label>
-                            <input type="text" id="nombre" required />
+                <div class="about-text">
+                    <h2>Paixão por jardinagem e paisagismo</h2>
+                    <p>Nós somos uma equipe apaixonada por jardinagem e paisagismo. Adoramos criar espaços verdes únicos e personalizados para nossos clientes e sempre nos esforçamos para superar suas expectativas!</p>
+                    <p>Com anos de experiência no mercado, oferecemos serviços de alta qualidade para residências e empresas em Rio das Ostras, Macaé e Búzios.</p>
+                    <a href="#contato" class="btn">Entre em Contato</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                            <label for="fecha">DATA:</label>
-                            <input type="date" id="fecha" required />
+    <!-- Services Section -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Corte e Poda de Grama</h3>
+                    <p>Serviço especializado de corte e poda para manter seu gramado sempre bonito e saudável.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Irrigação e Adubação</h3>
+                    <p>Sistemas de irrigação e adubação adequada para garantir o crescimento saudável das plantas.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Poda de Árvores</h3>
+                    <p>Poda técnica e segura de árvores para manter a saúde e estética do seu jardim.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Design de Jardins</h3>
+                    <p>Criação de projetos paisagísticos personalizados para transformar seu espaço externo.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Controle de Pragas</h3>
+                    <p>Identificação e tratamento de pragas e doenças que possam afetar suas plantas.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Serviços Gerais</h3>
+                    <p>Operamos com roçadeira, motosserras e outros equipamentos para serviços diversos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                            <label for="hora">Hora:</label>
-                            <input type="time" id="hora" required />
+    <!-- Gallery Section -->
+    <section class="gallery" id="galeria">
+        <div class="container">
+            <h2 class="section-title">Nossos Trabalhos</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <span class="gallery-label">Antes</span>
+                    <img src="antes.jpg" alt="Jardim antes da nossa intervenção">
+                </div>
+                <div class="gallery-item">
+                    <span class="gallery-label">Depois</span>
+                    <img src="depois.jpg" alt="Jardim depois da nossa intervenção">
+                </div>
+                <div class="gallery-item">
+                    <span class="gallery-label">Antes</span>
+                    <img src="antes1.jpg" alt="Jardim antes da nossa intervenção">
+                </div>
+                <div class="gallery-item">
+                    <span class="gallery-label">Depois</span>
+                    <img src="depois1.jpg" alt="Jardim depois da nossa intervenção">
+                </div>
+                <div class="gallery-item">
+                    <span class="gallery-label">Antes</span>
+                    <img src="antes3.jpg" alt="Jardim antes da nossa intervenção">
+                </div>
+                <div class="gallery-item">
+                    <span class="gallery-label">Depois</span>
+                    <img src="depois3.jpg" alt="Jardim depois da nossa intervenção">
+                </div>
+            </div>
+        </div>
+    </section>
 
-                            <button type="button" onclick="verificarCampos()">
-                                MARCAR AGORA
-                            </button>
+    <!-- Booking Section -->
+    <section class="booking" id="agendar">
+        <div class="container">
+            <h2 class="section-title">Agende Seu Horário</h2>
+            <div class="booking-form">
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">Data:</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="time">Hora:</label>
+                        <input type="time" id="time" required>
+                    </div>
+                    
+                    <div class="booking-buttons">
+                        <button type="submit" class="btn">Agendar Agora</button>
+                        <a href="tel:+5522998883449" class="btn btn-secondary">Ligar Agora</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 
-                            <a href="tel:+5522998883449" class="llamar-ahora"
-                                >LIGAR</a
-                            >
-                        </form>
+    <!-- Contact Section -->
+    <section class="contact" id="contato">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-container">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Contato</h3>
+                    <p><strong>Telefone:</strong> (22) 99888-3449</p>
+                    <a href="tel:+5522998883449" class="btn">Ligar Agora</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Endereço</h3>
+                    <p>Rua Antonio Custodio</p>
+                    <p>Estrada Vila Verde km5</p>
+                    <p>Casimiro de Abreu - RJ</p>
+                    <p>28860-000</p>
+                    <a href="#" class="btn">Ver Rotas</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Horário de Funcionamento</h3>
+                    <ul>
+                        <li><span class="day">Segunda:</span> <span class="time">07:00 – 17:45</span></li>
+                        <li><span class="day">Terça:</span> <span class="time">07:00 – 17:00</span></li>
+                        <li><span class="day">Quarta:</span> <span class="time">07:00 – 17:00</span></li>
+                        <li><span class="day">Quinta:</span> <span class="time">07:00 – 17:00</span></li>
+                        <li><span class="day">Sexta:</span> <span class="time">07:00 – 13:00</span></li>
+                        <li><span class="day">Sábado:</span> <span class="time closed">Fechado</span></li>
+                        <li><span class="day">Domingo:</span> <span class="time">07:00 – 17:00</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Bem Estar do Jardim</h3>
+                    <p>Especialistas em jardinagem e paisagismo em Rio das Ostras, Macaé e Búzios.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-            </div>
-
-            <div class="contacto-caja">
-                <h2>Contato</h2>
-                <button class="boton-telefono" href="tel:+22998883449">
-                    <i class="fa fa-phone"></i> Ligar
-                </button>
-                <p>(22) 9988-83449</p>
-            </div>
-
-            <div class="endereco-caja">
-                <h2>Endereço</h2>
-                <button id="ver-rutas-btn">ROTAS</button>
-                <p>Rua Antonio Custodio</p>
-                <p>Estrada Vila Verde km5</p>
-                <p>Casimiro de Abreu - RJ</p>
-                <p>28860-000</p>
-                <p>Brasil</p>
-            </div>
-
-            <div class="horario-caja">
-                <h2>Horário de funcionamento</h2>
-                <ul>
-                    <li>seg.: 07:00 – 17:45</li>
-                    <li>ter.: 07:00 – 17:00</li>
-                    <li>qua.: 07:00 – 17:00</li>
-                    <li>qui.: 07:00 – 17:00</li>
-                    <li>sex.: 07:00 – 13:00</li>
-                    <li>sáb.: Fechado</li>
-                    <li>dom.: 07:00 – 17:00</li>
-                </ul>
-            </div>
-                  
-             <div class="gallery">
-            <div class="img"><a>Antes</a>
-                <img class="img" src="antes.jpg" alt="Serviço 1" />
-            </div>
-            <div class="img"><a> Depois</a>
-                <img class="img" src="depois.jpg" alt="Serviço 2" />
-            </div>
-            <div class="img"><a>Antes</a>
-                <img class="img" src="antes1.jpg" alt="Serviço 3" />
-            </div>
-            <div class="img"><a> Depois</a>
-                <img class="img" src="depois1.jpg" alt="Serviço 4" />
-            </div>
-              </div>
-
-            <div class="img"><a>Antes</a>
-
-                <img class="img" src="antes3.jpg" alt="Serviço 5" />
-            </div>
-            <div class="img"><a> Depois</a>
-                <img class="img" src="depois3.jpg" alt="Serviço 6" />
+                
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (22) 99888-3449</li>
+                        <li><i class="fas fa-envelope"></i> bemestardojardim@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Rio das Ostras, RJ</li>
+                    </ul>
+                </div>
             </div>
             
+            <div class="copyright">
+                <p>&copy; 2023 Bem Estar do Jardim. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
         
-        </main>
-          <div class="fb-comments" data-href="https://bemestardojardim.github.io/bemestardojardim-/index.html" data-width="100%" data-numposts="5"></div>
-          
-        <footer>
-            <p>
-                Contate-nos pelo WhatsApp:
-                <a href="https://wa.me/5522998883449">+55 22 99888-3449</a>
-            </p>
-            <p>
-                Envie-nos um e-mail:
-                <a href="mailto:bemestardojardim@gmail.com"
-                    >bemestardojardim@gmail.com</a
-                >
-            </p>
-            <a>s</a>
-                        <a>s</a>
-                        <a>s</a>
-<a>s</a>
-            <a>s</a>
-            <a>s</a>
-            <a>s</a>
-
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-menu').classList.remove('active');
+            });
+        });
+        
+        // Form submission
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Obrigado! Seu agendamento foi enviado. Entraremos em contato em breve para confirmar.');
+            this.reset();
+        });
+        
+        // Set minimum date to today for booking
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('date').setAttribute('min', today);
+        
+        // Horario de funcionamento
+        function mostrarHorario() {
+            const ahora = new Date();
+            const hora = ahora.getHours();
+            const dia = ahora.getDay(); // 0 = domingo, 1 = lunes, etc.
             
-        </footer>
-    </body>
+            const horarioElement = document.getElementById('horario');
+            
+            // Verificar si está abierto según el horario proporcionado
+            let estaAbierto = false;
+            
+            if (dia === 0) { // Domingo
+                estaAbierto = hora >= 7 && hora < 17;
+            } else if (dia >= 1 && dia <= 4) { // Lunes a Jueves
+                estaAbierto = hora >= 7 && hora < 17;
+            } else if (dia === 5) { // Viernes
+                estaAbierto = hora >= 7 && hora < 13;
+            } // Sábado siempre cerrado
+            
+            if (estaAbierto) {
+                horarioElement.textContent = 'Aberto';
+                horarioElement.className = 'abierto';
+            } else {
+                horarioElement.textContent = 'Fechado';
+                horarioElement.className = 'cerrado';
+            }
+        }
+        
+        // Llamar a la función cuando se carga la página
+        window.onload = mostrarHorario;
+    </script>
+</body>
 </html>
